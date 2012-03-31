@@ -2,7 +2,7 @@ Some plugins for [Guzzle](http://guzzlephp.org/)
 
 # Installation
 
-    $ composer.phar install
+Require `frosas/guzzle-plugins` (`dev-master` version) in you `composer.json` ([more about Composer](http://getcomposer.org/doc/00-intro.md))
     
 # Usage
 
