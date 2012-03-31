@@ -6,7 +6,7 @@ Some plugins for [Guzzle](http://guzzlephp.org/)
     
 # Usage
 
-See the [plugins source code](src/Frosas/Guzzle/Http/Plugin)
+Please check the `src/Frosas/Guzzle/Http/Plugin` directory for available plugins and their documentation.
 
 # Testing
 
