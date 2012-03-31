@@ -7,8 +7,16 @@ use Guzzle\Http\Message\RequestInterface;
 use Guzzle\Http\Curl\CurlMultiInterface;
 use Guzzle\Common\Event;
 
-// TODO Catch exceptions and throw them only when there are no more requests in 
-// the queue. Right now it seems not possible without modifying CurlMulti.
+/**
+ * Limits the amount of active (parallel) connections
+ * 
+ * It has to be subscribed to CurlMulti event dispatcher:
+ * 
+ *     $client->getCurlMulti()->getEventDispatcher()->addSubscriber(new ConnectionLimit);
+ * 
+ * TODO Catch exceptions and throw them only when there are no more requests in the queue. Right 
+ * now it doesn't seem possible without modifying CurlMulti.
+ */
 class ConnectionLimit implements EventSubscriberInterface
 {
     private $max = 10;
