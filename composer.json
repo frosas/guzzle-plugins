@@ -1,0 +1,16 @@
+{
+    "name": "frosas/guzzle-plugins",
+    "description": "Some plugins for Guzzle (http://guzzlephp.org/)",
+    "authors": [
+        {
+            "name": "Francesc Rosàs",
+            "email": "francescrosasbosque@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzle/guzzle": "2.0.*"
+    },
+    "autoload": {
+        "psr-0": { "Frosas\\Guzzle": "src" }
+    }
+}
