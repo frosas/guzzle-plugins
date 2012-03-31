@@ -3,7 +3,6 @@
 namespace Frosas\Guzzle\Http\Plugin;
 
 use Guzzle\Http\Message\Response;
-use Guzzle\Http\Plugin\MockPlugin;
 
 class ConnectionLimitPluginTest extends \PHPUnit_Framework_TestCase
 {
