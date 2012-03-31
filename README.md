@@ -10,5 +10,4 @@ Please check the `src/Frosas/Guzzle/Http/Plugin` directory for available plugins
 
 # Testing
 
-    $ composer.phar install --install-suggests
     $ phpunit
