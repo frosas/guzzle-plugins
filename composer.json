@@ -1,6 +1,7 @@
 {
     "name": "frosas/guzzle-plugins",
     "description": "Some plugins for Guzzle (http://guzzlephp.org/)",
+    "license": "MIT",
     "authors": [
         {
             "name": "Francesc Rosàs",
