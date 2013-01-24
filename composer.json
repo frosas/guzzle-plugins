@@ -2,21 +2,8 @@
     "name": "frosas/guzzle-plugins",
     "description": "Some plugins for Guzzle (http://guzzlephp.org/)",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Francesc Rosàs",
-            "email": "francescrosasbosque@gmail.com"
-        }
-    ],
-    "require": {
-        "guzzle/guzzle": "2.7.*"
-    },
-    "autoload": {
-        "psr-0": { "Frosas\\Guzzle": "src" }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    }
+    "authors": [{"name": "Francesc Rosàs", "email": "francescrosasbosque@gmail.com"}],
+    "require": {"guzzle/guzzle": "2.8.*"},
+    "autoload": {"psr-0": { "Frosas\\Guzzle": "src" }},
+    "extra": {"branch-alias": {"dev-master": "1.0-dev"}}
 }
