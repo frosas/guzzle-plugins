@@ -3,7 +3,7 @@
     "description": "Some plugins for Guzzle (http://guzzlephp.org/)",
     "license": "MIT",
     "authors": [{"name": "Francesc Rosàs", "email": "francescrosasbosque@gmail.com"}],
-    "require": {"guzzle/guzzle": "2.8.*"},
+    "require": {"guzzle/guzzle": "~3.1"},
     "autoload": {"psr-0": { "Frosas\\Guzzle": "src" }},
-    "extra": {"branch-alias": {"dev-master": "1.0-dev"}}
+    "extra": {"branch-alias": {"dev-master": "1.1-dev"}}
 }

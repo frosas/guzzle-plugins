@@ -2,8 +2,7 @@
 
 namespace Frosas\Guzzle\Http\Plugin;
 
-use Guzzle\Http\HttpException;
-use Guzzle\Common\ExceptionCollection;
+use Guzzle\Http\Exception\HttpException;
 use Guzzle\Http\Message\Response;
 
 class FailFastTest extends \PHPUnit_Framework_TestCase
@@ -18,7 +17,7 @@ class FailFastTest extends \PHPUnit_Framework_TestCase
     
     function testASingleRequestExceptionIsThrown()
     {
-        $this->setExpectedException('Guzzle\Http\HttpException');
+        $this->setExpectedException('Guzzle\Http\Exception\HttpException');
         $this->client->send(array(
             $this->client->get()->setResponse(new Response(400), true)
         ));
