@@ -3,7 +3,6 @@
 namespace Frosas\Guzzle\Http\Plugin;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Guzzle\Http\Message\RequestInterface;
 use Guzzle\Http\Curl\CurlMultiInterface;
 use Guzzle\Common\Event;
 
@@ -19,7 +18,7 @@ use Guzzle\Common\Event;
  */
 class ConnectionLimit implements EventSubscriberInterface
 {
-    private $max = 10;
+    private $max;
     private $queued = array();
     private $removingActiveRequest = false;
     
@@ -31,9 +30,9 @@ class ConnectionLimit implements EventSubscriberInterface
         );
     }
     
-    function __construct($max = null)
+    function __construct($max = 10)
     {
-        if ($max) $this->max = $max;
+        $this->max = $max;
     }
     
     function onCurlAddRequest(Event $event)
