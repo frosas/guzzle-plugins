@@ -11,3 +11,7 @@ Please check the `src/Frosas/Guzzle/Http/Plugin` directory for available plugins
 # Testing
 
     $ phpunit
+
+# TODO
+
+- Test ConnectionRate plugin
